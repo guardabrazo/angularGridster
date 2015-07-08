@@ -8,7 +8,7 @@
  *
  * Main module of the application.
  */
-angular
+var app = angular
   .module('dashboardApp', [
     'ngAnimate',
     'ngCookies',
@@ -34,3 +34,5 @@ angular
         redirectTo: '/'
       });
   });
+
+

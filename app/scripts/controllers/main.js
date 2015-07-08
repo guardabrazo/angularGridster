@@ -16,9 +16,8 @@ angular.module('dashboardApp')
     ];
 
     this.standardItems = [
-      { sizeX: 4, sizeY: 2, row: 0, col: 0 },
-      { sizeX: 2, sizeY: 2, row: 0, col: 4 },
-      { sizeX: 2, sizeY: 2, row: 0, col: 6 }
+      { sizeX: 4, sizeY: 2, row: 0, col: 0, template: "<first-widget></first-widget>" },
+      { sizeX: 2, sizeY: 2, row: 0, col: 4, template: "<second-widget></second-widget>" }
     ];
 
     this.gridsterOpts = {
