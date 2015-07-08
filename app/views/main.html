@@ -1,5 +1,7 @@
-<div gridster ng-controller="MainCtrl as exampleGrid">
-  <ul>
-      <li gridster-item="item" ng-repeat="item in exampleGrid.standardItems" style="background-color: #DDDDDD"></li>
-  </ul>
+<div ng-controller="MainCtrl as exampleGrid">
+  <div gridster="exampleGrid.gridsterOpts">
+    <ul>
+        <li gridster-item="item" ng-repeat="item in exampleGrid.standardItems" style="background-color: #DDDDDD"></li>
+    </ul>
+  </div>
 </div>
