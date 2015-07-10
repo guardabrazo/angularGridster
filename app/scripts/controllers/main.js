@@ -17,7 +17,8 @@ angular.module('dashboardApp')
 
     this.standardItems = [
       { sizeX: 4, sizeY: 2, row: 0, col: 0, template: "<first-widget></first-widget>" },
-      { sizeX: 2, sizeY: 2, row: 0, col: 4, template: "<second-widget></second-widget>" }
+      { sizeX: 2, sizeY: 2, row: 0, col: 4, template: "<donut-chart></donut-chart>" },
+      { sizeX: 2, sizeY: 2, row: 0, col: 6, template: "<second-widget></second-widget>" }
     ];
 
     this.gridsterOpts = {
@@ -31,8 +32,8 @@ angular.module('dashboardApp')
       margins: [4, 4], // the pixel distance between each widget
       outerMargin: true, // whether margins apply to outer edges of the grid
       isMobile: false, // stacks the grid items if true
-      mobileBreakPoint: 600, // if the screen is not wider that this, remove the grid layout and stack the items
-      mobileModeEnabled: false, // whether or not to toggle mobile mode when screen width is less than mobileBreakPoint
+      mobileBreakPoint: 800, // if the screen is not wider that this, remove the grid layout and stack the items
+      mobileModeEnabled: true, // whether or not to toggle mobile mode when screen width is less than mobileBreakPoint
       minColumns: 1, // the minimum columns the grid must have
       minRows: 2, // the minimum height of the grid, in rows
       maxRows: 100,

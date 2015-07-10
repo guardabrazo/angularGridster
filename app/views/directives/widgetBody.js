@@ -13,11 +13,7 @@ app.directive('widgetBody', ['$compile',
         // returns a function that is looking for scope
         // use angular compile service to instanitate a new widget element
         $compile(newEl)(scope);
-
-
       }
-
     };
-
   }
 ]);
