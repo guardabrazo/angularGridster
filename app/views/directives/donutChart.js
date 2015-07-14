@@ -9,12 +9,19 @@ app.directive("donutChart", function() {
           var height = 300;
           var min = Math.min(width, height);
           // var svg = d3.select('body').append('svg');
-          var svg = d3.select(element[0]).append("svg");
+          var svg = d3.select(element[0]).append("svg")
+          .attr("width", "100%")
+          .attr("height", "100%")
+
+          // Making it responsive
+          .attr('viewBox','0 0 '+Math.min(width,height)+' '+Math.min(width,height))
+          .attr('preserveAspectRatio','xMinYMin')
+
           var pie = d3.layout.pie().sort(null);
           var arc = d3.svg.arc()
                 .outerRadius(min / 2 * 0.9)
                 .innerRadius(min / 2 * 0.5);
-              svg.attr({width: width, height: height});
+              // svg.attr({width: width, height: height});
 
           var g = svg.append('g')
           // center the donut chart
